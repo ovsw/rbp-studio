@@ -10,6 +10,7 @@ import category from './documents/category'
 import post from './documents/post'
 import siteSettings from './documents/siteSettings'
 import page from './documents/page'
+import mapMarker from './documents/mapMarker'
 
 // Object types
 import bodyPortableText from './objects/bodyPortableText'
@@ -21,6 +22,7 @@ import youtube from './objects/youtube'
 import mytable from './objects/myTable'
 import iframeEmbed from './objects/iframeEmbed'
 import hubSpotFormEmbed from './objects/hubSpotFormEmbed'
+import slideshowImage from './objects/slideshowImage'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -44,6 +46,8 @@ export default createSchema({
     youtube,
     iframeEmbed,
     hubSpotFormEmbed,
+    mapMarker,
+    slideshowImage,
     mytable
 
     // When added to this list, object types can be used as

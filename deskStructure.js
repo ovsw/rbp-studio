@@ -1,8 +1,8 @@
 import S from '@sanity/desk-tool/structure-builder'
-import {MdSettings, MdPerson, MdFolder} from 'react-icons/md/'
+import {MdSettings, MdMap, MdFolder} from 'react-icons/md/'
 
 const hiddenDocTypes = listItem =>
-  !['category', 'author', 'post', 'page', 'siteSettings'].includes(listItem.getId())
+  !['category', 'author', 'post', 'page', 'siteSettings', 'mapMarker'].includes(listItem.getId())
 
 export default () =>
   S.list()
@@ -191,6 +191,11 @@ export default () =>
                 .title('Request Info')
                 .schemaType('page')
             ])),
+      S.listItem()
+        .title('Interactive Map')
+        .icon(MdMap)
+        .schemaType('mapMarker')
+        .child(S.documentTypeList('mapMarker').title('Map Markers')),
       // S.listItem()
       //   .title('Blog posts')
       //   .schemaType('post')
