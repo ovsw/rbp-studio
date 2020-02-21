@@ -12,7 +12,7 @@ export default {
       // use your content.
       styles: [
         {title: 'Normal', value: 'normal'},
-        {title: 'H1', value: 'h1'},
+        // {title: 'H1', value: 'h1'},
         {title: 'H2', value: 'h2'},
         {title: 'H3', value: 'h3'},
         {title: 'H4', value: 'h4'},
@@ -34,7 +34,9 @@ export default {
               {
                 title: 'URL',
                 name: 'href',
-                type: 'url'
+                type: 'url',
+                validation: Rule =>
+                  Rule.required().uri({scheme: ['http', 'https', 'mailto', 'tel'], allowRelative: true})
               }
             ]
           }

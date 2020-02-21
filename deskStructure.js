@@ -152,6 +152,10 @@ export default () =>
                         .title('Location')
                         .schemaType('page'),
                       S.documentListItem()
+                        .id('directions')
+                        .title('Directions')
+                        .schemaType('page'),
+                      S.documentListItem()
                         .id('e768a61e-a59c-49a9-8caf-d4a2a90e04dd')
                         .title('ACA Accreditation')
                         .schemaType('page')

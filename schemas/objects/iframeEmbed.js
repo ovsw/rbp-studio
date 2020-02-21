@@ -19,6 +19,16 @@ export default {
       type: 'text',
       validation: Rule =>
         Rule.required()
+    },
+    // {
+    //   title: 'This is a Cognito Form (required for responsive form code)',
+    //   name: 'cognitoForm',
+    //   type: 'boolean'
+    // },
+    {
+      title: 'This is an EmbedSocial widget (required for EmbedSocial content to show)',
+      name: 'embedSocial',
+      type: 'boolean'
     }
   ],
   preview: {
