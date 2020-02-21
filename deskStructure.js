@@ -191,6 +191,27 @@ export default () =>
                     ])
                 ),
               S.documentListItem()
+                .id('staff')
+                .title('Staff')
+                .schemaType('page'),
+              S.listItem()
+                .title('Staff Pages')
+                .icon(MdFolder)
+                .child(
+                  S.list()
+                    .title('Staff Pages')
+                    .items([
+                      S.documentListItem()
+                        .id('currentOpenings')
+                        .title('Current Openings')
+                        .schemaType('page'),
+                      S.documentListItem()
+                        .id('staffSummerDates')
+                        .title('Summer Dates')
+                        .schemaType('page')
+                    ])
+                ),
+              S.documentListItem()
                 .id('requestInfo')
                 .title('Request Info')
                 .schemaType('page')
