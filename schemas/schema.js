@@ -23,6 +23,7 @@ import mytable from './objects/myTable'
 import iframeEmbed from './objects/iframeEmbed'
 import hubSpotFormEmbed from './objects/hubSpotFormEmbed'
 import slideshowImage from './objects/slideshowImage'
+import BoldItalicLinksPortableText from './objects/boldItalicLinksPortableText'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -42,6 +43,7 @@ export default createSchema({
     authorReference,
     bodyPortableText,
     bioPortableText,
+    BoldItalicLinksPortableText,
     excerptPortableText,
     youtube,
     iframeEmbed,
