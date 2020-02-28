@@ -212,6 +212,18 @@ export default () =>
                     ])
                 ),
               S.documentListItem()
+                .id('termsConditions')
+                .title('Terms & Conditions')
+                .schemaType('page'),
+              S.documentListItem()
+                .id('privacyPolicy')
+                .title('Privacy Policy')
+                .schemaType('page'),
+              S.documentListItem()
+                .id('adaCompliance')
+                .title('ADA Compliance')
+                .schemaType('page'),
+              S.documentListItem()
                 .id('requestInfo')
                 .title('Request Info')
                 .schemaType('page')
