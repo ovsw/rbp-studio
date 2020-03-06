@@ -55,6 +55,9 @@ export default {
       type: 'youtube'
     },
     {
+      type: 'localFile'
+    },
+    {
       type: 'mytable'
     },
     {
