@@ -20,6 +20,7 @@ import mainImage from './objects/mainImage'
 import authorReference from './objects/authorReference'
 import youtube from './objects/youtube'
 import mytable from './objects/myTable'
+import localFile from './objects/localFile'
 import iframeEmbed from './objects/iframeEmbed'
 import hubSpotFormEmbed from './objects/hubSpotFormEmbed'
 import slideshowImage from './objects/slideshowImage'
@@ -50,6 +51,7 @@ export default createSchema({
     hubSpotFormEmbed,
     mapMarker,
     slideshowImage,
+    localFile,
     mytable
 
     // When added to this list, object types can be used as

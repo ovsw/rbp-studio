@@ -23,12 +23,9 @@ export default () =>
           S.list()
             .title('Pages')
             .items([
-              S.documentListItem()
-                .id('futureFamilies')
-                .title('Future Families')
-                .schemaType('page'),
               S.listItem()
                 .title('Future Families Section Pages')
+                .icon(MdFolder)
                 .child(
                   S.list()
                     .title('Future Families Section Pages')
@@ -106,6 +103,10 @@ export default () =>
                         .title('Before & After Care')
                         .schemaType('page'),
                       S.documentListItem()
+                        .id('earlyEnrollMent')
+                        .title('Early Enrollment')
+                        .schemaType('page'),
+                      S.documentListItem()
                         .id('datesRates')
                         .title('Dates & Rates')
                         .schemaType('page'),
@@ -122,12 +123,7 @@ export default () =>
                         .title('FAQs')
                         .schemaType('page')
                     ])
-                )
-                .icon(MdFolder),
-              S.documentListItem()
-                .id('about')
-                .title('About')
-                .schemaType('page'),
+                ),
               S.listItem()
                 .title('About Section Pages')
                 .id('aboutSection')
@@ -135,6 +131,10 @@ export default () =>
                   S.list()
                     .title('About Section Pages')
                     .items([
+                      S.documentListItem()
+                        .id('aMessageFromOurDirectors')
+                        .title('Message from our Directors')
+                        .schemaType('page'),
                       S.documentListItem()
                         .id('2bded937-a7ca-4784-b728-877c86f8eab0')
                         .title('Our Directors')
@@ -162,20 +162,13 @@ export default () =>
                     ])
                 )
                 .icon(MdFolder),
-              S.documentListItem()
-                .id('currentFamilies')
-                .title('Current Families')
-                .schemaType('page'),
               S.listItem()
                 .title('Current Families Section Pages')
+                .icon(MdFolder)
                 .child(
                   S.list()
                     .title('Current Families Section Pages')
                     .items([
-                      S.documentListItem()
-                        .id('camperPhotoApp')
-                        .title('Camper Photo App')
-                        .schemaType('page'),
                       S.documentListItem()
                         .id('lunchMenu')
                         .title('Lunch Menu')
@@ -190,10 +183,6 @@ export default () =>
                         .schemaType('page')
                     ])
                 ),
-              S.documentListItem()
-                .id('staff')
-                .title('Staff')
-                .schemaType('page'),
               S.listItem()
                 .title('Staff Pages')
                 .icon(MdFolder)
@@ -201,6 +190,10 @@ export default () =>
                   S.list()
                     .title('Staff Pages')
                     .items([
+                      S.documentListItem()
+                        .id('workingAtRBP')
+                        .title('Working at Rambling Pines')
+                        .schemaType('page'),
                       S.documentListItem()
                         .id('currentOpenings')
                         .title('Current Openings')
@@ -226,7 +219,28 @@ export default () =>
               S.documentListItem()
                 .id('requestInfo')
                 .title('Request Info')
-                .schemaType('page')
+                .schemaType('page'),
+              S.listItem()
+                .title('Hidden Form Pages')
+                .icon(MdFolder)
+                .child(
+                  S.list()
+                    .title('Hidden Form Pages')
+                    .items([
+                      S.documentListItem()
+                        .id('returningStaffForm')
+                        .title('Returning Staff Form')
+                        .schemaType('page'),
+                      S.documentListItem()
+                        .id('campExtensionForm')
+                        .title('Camp Extension Form')
+                        .schemaType('page'),
+                      S.documentListItem()
+                        .id('familyNightForm')
+                        .title('Family Night Form')
+                        .schemaType('page')
+                    ])
+                )
             ])),
       S.listItem()
         .title('Interactive Map')
