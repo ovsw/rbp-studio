@@ -32,12 +32,12 @@ export default {
       title: 'Title',
       type: 'string'
     },
-    {
-      name: 'longTitle',
-      title: 'Long Title (optional)',
-      type: 'string',
-      description: 'This is the main heading of the page. If left empty, the "Title" field above will be used instead.'
-    },
+    // {
+    //   name: 'longTitle',
+    //   title: 'Long Title (optional)',
+    //   type: 'string',
+    //   description: 'This is the main heading of the page. If left empty, the "Title" field above will be used instead.'
+    // },
     {
       name: 'slug',
       type: 'slug',
@@ -54,7 +54,7 @@ export default {
       name: 'section',
       type: 'string',
       options: {
-        list: ['Future Families', 'About us', 'Current Families', 'Staff'],
+        list: ['Future Families', 'About us', 'Current Families', 'Staff', 'No Section'],
         layout: 'radio',
         direction: 'horizontal'
       }
