@@ -102,10 +102,10 @@ export default () =>
                         .id('beforeAfterCare')
                         .title('Before & After Care')
                         .schemaType('page'),
-                      S.documentListItem()
-                        .id('earlyEnrollMent')
-                        .title('Early Enrollment')
-                        .schemaType('page'),
+                      // S.documentListItem()
+                      //   .id('earlyEnrollMent')
+                      //   .title('Early Enrollment')
+                      // .schemaType('page'),
                       S.documentListItem()
                         .id('datesRates')
                         .title('Dates & Rates')
@@ -238,6 +238,14 @@ export default () =>
                       S.documentListItem()
                         .id('familyNightForm')
                         .title('Family Night Form')
+                        .schemaType('page'),
+                      S.documentListItem()
+                        .id('survey1')
+                        .title('Survey 1')
+                        .schemaType('page'),
+                      S.documentListItem()
+                        .id('survey2')
+                        .title('Survey 2')
                         .schemaType('page')
                     ])
                 )
