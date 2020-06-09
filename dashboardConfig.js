@@ -10,8 +10,9 @@ export default {
     {
       name: 'netlify',
       options: {
+        title: 'Push Published Content to live site.',
         description:
-          'NOTE: Because these sites are static builds, they need to be re-deployed to see the changes when documents are published.',
+          'NOTE: to make newly-published content appear in the front-end of the live website, you need to manally trigger a deploy by clicking the button below that says "Deploy"!',
         sites: [
         //   {
         //     buildHookId: '5d91cbd3a244677761923699',
@@ -21,7 +22,7 @@ export default {
         //   },
           {
             buildHookId: '5d91cbd385c04f001f9a849c',
-            title: 'Blog Website',
+            title: 'www.ramblingpines.com',
             name: 'rbp-app',
             apiId: '19c006c0-94b0-461d-8bb0-f6d1ec4333ed'
           }
