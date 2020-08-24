@@ -248,7 +248,11 @@ export default () =>
                         .title('Survey 2')
                         .schemaType('page')
                     ])
-                )
+                ),
+              S.documentListItem()
+                .id('seasonCancelledPage')
+                .title('Season Cancelled Page')
+                .schemaType('page')
             ])),
       S.listItem()
         .title('Interactive Map')
